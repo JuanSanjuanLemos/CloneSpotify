@@ -1,4 +1,5 @@
 @use '../colors/colors' as c;
+@use '../mixins' as m;
 footer{
     display: flex;
     justify-content: center;
@@ -47,6 +48,7 @@ footer{
     margin: 0;   
     ul{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap ;     
         a{
@@ -71,6 +73,27 @@ footer{
         &:hover{
             color: c.$second-color;
             cursor: pointer;
+        }
+    }
+    @include m.sm{
+        ul{
+            flex-direction: row;
+            padding: 0;
+        }
+    }
+    @include m.md{
+        ul{
+            li{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+        span{
+            font-size: 12px;
+        }
+        h6{
+            font-size: 12px;
         }
     }
 }
