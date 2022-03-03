@@ -1,5 +1,7 @@
 @use './colors/colors';
 @use './components/nav-bar';
+@use '../styles/components/main-section';
+
 body{
     font-family: 'Roboto', 'sans-serif';
 }
