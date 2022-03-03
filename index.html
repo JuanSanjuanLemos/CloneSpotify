@@ -26,26 +26,22 @@
                 <a href="#" class="navbar-brand navbar-logo">
                     <img src="img/spotify-logo.png" alt="Logo do Spotify">
                 </a>
-                <button 
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-items"
-                    aria-controls="navbar-items"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >        
-                    <i class="bi bi-list primary-color fs-1"></i>
-                </button>
-                <div class="collapse navbar-collapse navbar-items">
-                    <ul class="navbar-nav me-auto mb-2 pt-3 mb-lg-0">
-                        <li class="nav-items primary-color"><a href="#" class="-links">Premium</a></li>
-                        <li class="nav-items primary-color"><a href="#" class="-links">Suporte</a></li>
-                        <li class="nav-items  primary-color"><a href="#" class="-links">Baixar</a></li>
-                        <li class="primary-color" role="separator">|</li>
-                        <li class="nav-items primary-color"><a href="#" class="-actions">Inscrever-se</a></li>
-                        <li class="nav-items primary-color"><a href="#" class="-actions">Entrar</a></li>
-                    </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="bi bi-list primary-color"></i>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end bg-dark-color">
+                      <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-dark-color">
+                        <ul class="navbar-nav me-auto mb-2 pt-3 mb-lg-0">
+                            <li class="nav-items primary-color"><a href="#" class="-links">Premium</a></li>
+                            <li class="nav-items primary-color"><a href="#" class="-links">Suporte</a></li>
+                            <li class="nav-items  primary-color"><a href="#" class="-links">Baixar</a></li>
+                            <li class="primary-color" role="separator">|</li>
+                            <li class="nav-items primary-color"><a href="#" class="-actions">Inscrever-se</a></li>
+                            <li class="nav-items primary-color"><a href="#" class="-actions">Entrar</a></li>
+                        </ul>
                 </div>
             </div>
         </nav>
