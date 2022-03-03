@@ -1,7 +1,10 @@
 @use './colors/colors';
 @use './components/nav-bar';
+@use './components/main-footer';
 @use '../styles/components/main-section';
 
 body{
     font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+    margin: 0;
 }
