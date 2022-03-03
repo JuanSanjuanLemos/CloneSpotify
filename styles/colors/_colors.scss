@@ -1,0 +1,16 @@
+$bg-primary-color:#1ED760;
+$bg-second-color:#2941ab;
+$bg-dark-color:#000;
+$primary-color:#fff;
+$second-color:#1ED760;
+
+.bg-dark-color{
+    background-color: $bg-dark-color;
+}
+.bg-primary-color{
+    background-color: $bg-primary-color;
+}
+
+.primary-color{
+    color: $primary-color;
+}
