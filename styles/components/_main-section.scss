@@ -1,18 +1,34 @@
 @use '../colors/colors' as c;
 .main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+    background-size: 215%;
     background-repeat: no-repeat;
     background-position: center top 35%;
-    /*&::before{
-        content: "";
-        position: absolute;
-        top:-80px;
-        right: -120px;
-        background-color:c.$bg-primary-color;
-        width: 200px;
-        height: 200px;
-        display: block;
-        border-radius: 100%;
-    }*/
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            text-align: center;
+            font-size: 2.7em;
+            font-weight: 900;
+        }
+        p{
+            text-align: center;
+            max-width: 400px;
+        }
+        button{
+            width: 200px;
+            border-radius: 20px;
+            color: #2941ab;
+            font-weight: 700;
+            line-height: 2;
+        }
+    }
+
 }
